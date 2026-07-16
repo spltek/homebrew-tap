@@ -5,21 +5,21 @@
 class Cl < Formula
   desc "A tiny personal command manager with an interactive picker"
   homepage "https://github.com/silviopola/cl"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/silviopola/cl/releases/download/v1.2.0/cl_1.2.0_darwin_amd64.tar.gz"
-      sha256 "346a131e10e165f54aa07102196601746b651da9592ac4478e81dcd973586605"
+      url "https://github.com/silviopola/cl/releases/download/v1.3.0/cl_1.3.0_darwin_amd64.tar.gz"
+      sha256 "f573ff8bf301a62189a065607b7058b056b3f1a53c4286aeeb25f984af22343e"
 
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/silviopola/cl/releases/download/v1.2.0/cl_1.2.0_darwin_arm64.tar.gz"
-      sha256 "2d0aca0d90a87d86d8fa65a7ec86ac8d20c162fa2951ea02390fafdd3695c835"
+      url "https://github.com/silviopola/cl/releases/download/v1.3.0/cl_1.3.0_darwin_arm64.tar.gz"
+      sha256 "0f64359146858c43046551e563afb615a3b6597930c8584da7b082322a92d154"
 
       define_method(:install) do
         bin.install "cl"
@@ -29,15 +29,15 @@ class Cl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silviopola/cl/releases/download/v1.2.0/cl_1.2.0_linux_amd64.tar.gz"
-      sha256 "3ef5d0bcb2b09fa27369817cb6260d5099f72f4bde364154002905cdf3b348a3"
+      url "https://github.com/silviopola/cl/releases/download/v1.3.0/cl_1.3.0_linux_amd64.tar.gz"
+      sha256 "88064a56c79c6e198ae0f3e3950168ac58cbd394bf0de5dd604c88c4b0856701"
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silviopola/cl/releases/download/v1.2.0/cl_1.2.0_linux_arm64.tar.gz"
-      sha256 "fabf42f3c7e63d44b33b96e15c9cfe20dd78377402fc79cd7172b3ac783b0437"
+      url "https://github.com/silviopola/cl/releases/download/v1.3.0/cl_1.3.0_linux_arm64.tar.gz"
+      sha256 "795fbd01a10cffc9f21651122cfcfce1075a6d08678f3bb105deb5ef6b599f38"
       define_method(:install) do
         bin.install "cl"
       end
