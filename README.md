@@ -2,8 +2,8 @@
 
 ![Homebrew Tap](media/brew_tap_software_tools.png)
 
-Homebrew tap for [silviopola](https://github.com/silviopola)'s tools.
+Homebrew tap for [spltek](https://github.com/spltek)'s tools.
 
 ```
-brew install silviopola/tap/cl
+brew install spltek/tap/cl
 ```
