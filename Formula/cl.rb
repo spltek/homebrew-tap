@@ -5,21 +5,21 @@
 class Cl < Formula
   desc "A tiny personal command launcher with an interactive picker"
   homepage "https://github.com/spltek/cl"
-  version "1.6.0"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/spltek/cl/releases/download/v1.6.0/cl_1.6.0_darwin_amd64.tar.gz"
-      sha256 "aaf9c71782ac3a72b3b8b3dee7b99bf43bf2fdd163f13dc40b0be7b478f40588"
+      url "https://github.com/spltek/cl/releases/download/v1.7.0/cl_1.7.0_darwin_amd64.tar.gz"
+      sha256 "2860d57b6ddec55acbcd904d8fe1138196f44838f86034b92bd9d0ec1e0a4e8b"
 
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/spltek/cl/releases/download/v1.6.0/cl_1.6.0_darwin_arm64.tar.gz"
-      sha256 "2ad04e349ab17aa8075d17b548df7da80a874248ef12d84afe78dbf17bce4dbb"
+      url "https://github.com/spltek/cl/releases/download/v1.7.0/cl_1.7.0_darwin_arm64.tar.gz"
+      sha256 "b498e36b095b48f97ae7fb9eff63782108867efc7349d4b74498a706dc43e5e4"
 
       define_method(:install) do
         bin.install "cl"
@@ -29,15 +29,15 @@ class Cl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/spltek/cl/releases/download/v1.6.0/cl_1.6.0_linux_amd64.tar.gz"
-      sha256 "6e85aa4e0b540f51c7ba9a646a2c387ad6d16aee7598d43b0e09905772cb4e53"
+      url "https://github.com/spltek/cl/releases/download/v1.7.0/cl_1.7.0_linux_amd64.tar.gz"
+      sha256 "9ba5c53b3d0f9350261f0d1b52de5ec7c1acfb10cdd8034a31912e9e5a4468d1"
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/spltek/cl/releases/download/v1.6.0/cl_1.6.0_linux_arm64.tar.gz"
-      sha256 "0962f4b59bf44bdc9a1dbfa3214700394b27f64baca3dc2dac3cbaff0990efd7"
+      url "https://github.com/spltek/cl/releases/download/v1.7.0/cl_1.7.0_linux_arm64.tar.gz"
+      sha256 "4530873514b38f6a6abb9c03a235dbe68b4b11f8d182dde5ca1c2238e695f4bd"
       define_method(:install) do
         bin.install "cl"
       end
