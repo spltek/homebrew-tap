@@ -11,7 +11,7 @@ class Cl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/spltek/cl/releases/download/v1.8.0/cl_1.8.0_darwin_amd64.tar.gz"
-      sha256 "bd2ee439728cc9ed1ee364ad460502136e911c64701ff708c73c091941b5a28e"
+      sha256 "3b4aa598740add99c7902858f54dc8b70acf575e106ab86ec1ad8e66a2723474"
 
       define_method(:install) do
         bin.install "cl"
@@ -19,7 +19,7 @@ class Cl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/spltek/cl/releases/download/v1.8.0/cl_1.8.0_darwin_arm64.tar.gz"
-      sha256 "9565f97166cf05003ee23fd9e99770405136558f99061bf76c1689a167d8c9d0"
+      sha256 "d8391cdd71ff2e56855d2f8e3481702521b979b68325eeea92a799286fa1b7b1"
 
       define_method(:install) do
         bin.install "cl"
@@ -30,14 +30,14 @@ class Cl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/spltek/cl/releases/download/v1.8.0/cl_1.8.0_linux_amd64.tar.gz"
-      sha256 "7faffb97c0d5552a2bff8186a685eaa460a1cba92a31522fafdc233128304f0a"
+      sha256 "b6fb8110303e9db64f5c03b001daa5c213e9ca8ff0113a187f5002a1c7330011"
       define_method(:install) do
         bin.install "cl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/spltek/cl/releases/download/v1.8.0/cl_1.8.0_linux_arm64.tar.gz"
-      sha256 "12f47d6d77344b5756e6058246e259c2cf349a5e7e6bc97a284b379556f1da39"
+      sha256 "a6551c3c49d12726e60730b4073086368204fecfa2b5da2f71ab0a4cb1e63ab3"
       define_method(:install) do
         bin.install "cl"
       end
